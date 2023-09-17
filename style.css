@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+main p {
+  font-size: 18px;
+}
+
+main .first-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 320px;
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 95%, 52%)
+  );
+  color: rgb(255, 255, 255);
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+}
+
+main .first-section p:first-child {
+  margin-bottom: 23px;
+  font-weight: 700;
+}
+
+main .first-section p {
+  color: hsla(0, 0%, 90%, 0.8);
+}
+
+main .first-section .result {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to top,
+    hsla(256, 72%, 46%, 0),
+    hsla(241, 72%, 46%, 1)
+  );
+  margin-bottom: 20px;
+}
+
+main .first-section .result h1 {
+  font-size: 45px;
+  font-weight: 800;
+  margin-top: 20px;
+}
+
+main .first-section .result + h2 {
+  font-size: 21px;
+  font-weight: 700;
+  color: hsl(0, 0%, 90%);
+  margin-bottom: 10px;
+}
+
+main .first-section p:last-child {
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+main .first-section p:last-child .block {
+  display: block;
+}
+
+main .second-section {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+}
+
+main .container {
+  width: 80%;
+  margin-top: 25px;
+}
+
+main .second-section .container p:first-child {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+}
+
+main .second-section .container .reaction,
+.memory,
+.verbal,
+.visual {
+  display: flex;
+  padding: 12px 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+main .second-section .container .reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+main .second-section .container .memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+main .second-section .container .verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+main .second-section .container .visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+main .second-section .container .reaction .light-red {
+  color: hsl(0, 100%, 67%);
+}
+
+main .second-section .container .memory .orangey-yellow {
+  color: hsl(39, 100%, 56%);
+}
+
+main .second-section .container .verbal .green-teal {
+  color: hsl(166, 100%, 37%);
+}
+
+main .second-section .container .visual .cobalt-blue {
+  color: hsl(234, 85%, 45%);
+}
+main .second-section .container .inline-block {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+main .second-section .container img {
+  vertical-align: top;
+  margin-right: 2px;
+}
+
+main .second-section .container .score {
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+}
+
+main .second-section .container .score::after {
+  content: "  \002F  100";
+  color: hsl(0, 1%, 65%);
+}
+
+main .second-section .container button {
+  width: 100%;
+  padding: 12px 12px;
+  border: none;
+  border-radius: 30px;
+  background-color: hsl(224, 30%, 27%);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0 10px 0;
+}
+
+main .second-section .container button:active {
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 95%, 52%)
+  );
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 10px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+/* Media query DESKTOP */
+@media screen and (min-width: 767px) {
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  main {
+    display: flex;
+    width: 550px;
+    min-height: 400px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  main p {
+    font-size: 14px;
+  }
+
+  main .first-section {
+    width: 50%;
+    border-top-right-radius: 25px;
+  }
+
+  main .first-section .result {
+    height: 150px;
+    width: 150px;
+  }
+
+  main .first-section p:last-child {
+    line-height: 20px;
+  }
+  main .first-section p:last-child .block {
+    display: inline;
+  }
+
+  main .first-section .desktop-style {
+    width: 200px;
+    text-align: center;
+  }
+
+  main .second-section {
+    width: 50%;
+  }
+
+  main .second-section .container p:first-child {
+    font-size: 16px;
+    margin-top: 12px;
+  }
+
+  main .second-section .container button {
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  main .second-section .container button:active {
+    background: linear-gradient(
+      to bottom,
+      hsl(252, 100%, 67%),
+      hsl(241, 95%, 52%)
+    );
+  }
+}
